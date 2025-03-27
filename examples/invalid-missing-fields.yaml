@@ -1,0 +1,7 @@
+
+version: v1
+policy_id: invalid-policy
+description: Missing capabilities section
+match:
+  agent_tags:
+    - classification:test
