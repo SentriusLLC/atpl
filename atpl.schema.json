@@ -47,6 +47,7 @@
       "runtime": {
         "type": "object",
         "properties": {
+          "allow_drift": { "type": "boolean" },
           "enclave_required": { "type": "boolean" },
           "attestation_type": { "type": "string" },
           "verified_at_boot": { "type": "boolean" }
@@ -95,6 +96,22 @@
               "properties": {
                 "id": { "type": "string" },
                 "description": { "type": "string" },
+                "endpoints": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "commands": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "subcommands": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "activities": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
                 "tags": {
                   "type": "array",
                   "items": { "type": "string" }
@@ -116,12 +133,29 @@
                 "tags": {
                   "type": "array",
                   "items": { "type": "string" }
+                },
+                "endpoints": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "commands": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "subcommands": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "activities": {
+                  "type": "array",
+                  "items": { "type": "string" }
                 }
               }
             }
           }
         }
-      },
+      }
+,
       "actions": {
             "type": "object",
             "properties": {
