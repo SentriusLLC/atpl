@@ -86,54 +86,6 @@ ATPL addresses agent-specific challenges with:
 
 ## Evoluation for Command and Control of agents
 
-┌──────────────────────────────┐
-│        Human / UI            │
-│  (Intent + Constraints)      │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│        LLM Planner           │
-│  - Decompose intent          │
-│  - Generate plans            │
-│  - Annotate assumptions      │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│      Trust Boundary          │
-│ ┌────────────────────────┐   │
-│ │ ATPL Policy Evaluation │   │
-│ │ ZTAT Issuance          │   │
-│ │ Scope Continuity Check │   │
-│ └────────────────────────┘   │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│      Execution Engine        │
-│  - Verb validation           │
-│  - Simulation (optional)     │
-│  - Enforcement               │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│ Telemetry + Provenance Plane │
-│  - Action graph              │
-│  - Inputs / Outputs          │
-│  - Authority lineage         │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│        LLM Analyzer          │
-│  - Explain outcomes          │
-│  - Detect anomalies          │
-│  - Suggest next actions      │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│     Human Oversight          │
-│  - Approve / Refine intent   │
-│  - Escalate scope            │
-│  - Terminate execution       │
-└──────────────────────────────┘
 
 
 ### Key Sections
